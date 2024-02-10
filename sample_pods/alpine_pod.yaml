@@ -7,9 +7,11 @@ spec:
    - name: c1
      image: alpine
      env:
-      - name: name
-        value: "chaithanyaa" 
+      - name: firtName
+        value: "chaithanya" 
+      - name: lastName
+        value: "Dasari"  
      command: 
       - "sh"
       - "-c"
-      - 'while true ;do echo "$name" ; sleep 5 ; done'
+      - 'while true ;do echo "my name is ${lastName}${firstName} " ; sleep 5 ; done'
