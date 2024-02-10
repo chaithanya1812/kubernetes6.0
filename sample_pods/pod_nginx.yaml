@@ -30,14 +30,14 @@ Description: >
  environment: &using 
     name: dev
     project: roboshop
-  environment: *using
+ environment: *using
 # ----------------  
 
 Descriptio: >
  environment: &using 
     name: dev
     project: roboshop
-  environment: 
+ environment: 
     <<: *using
     colud: aws
 
