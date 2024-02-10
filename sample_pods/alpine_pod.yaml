@@ -7,7 +7,7 @@ spec:
    - name: c1
      image: alpine
      env:
-      - name: firtName
+      - name: firstName
         value: "chaithanya" 
       - name: lastName
         value: "Dasari"  
