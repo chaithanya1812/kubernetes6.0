@@ -11,3 +11,17 @@ spec:
     resources:
     ports:
       - containerPort: 80
+        name: nginx_port
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxservice
+spec:
+  selector:
+    name: nginx
+  ports:
+  - port: 80
+    targetPort: nginx_pod
+
