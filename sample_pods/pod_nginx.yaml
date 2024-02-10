@@ -25,22 +25,6 @@ spec:
   - port: 80
     targetPort: nginxport
 
-# This is comment
-Description: >
- environment: &using 
-    name: dev
-    project: roboshop
- environment: *using
-# ----------------  
-
-Descriptio: >
- environment: &using 
-    name: dev
-    project: roboshop
- environment: 
-    <<: *using
-    colud: aws
-
-#-------------------------    
+    
    
 
