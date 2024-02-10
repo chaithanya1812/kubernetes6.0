@@ -6,7 +6,10 @@ spec:
  containers:
    - name: c1
      image: alpine
+     env:
+      - name: name
+        value: "chaithanyaa" 
      command: 
       - "sh"
       - "-c"
-      - "while true ;do echo chaitu ; sleep 5 ; done"
+      - 'while true ;do echo "$name" ; sleep 5 ; done'
