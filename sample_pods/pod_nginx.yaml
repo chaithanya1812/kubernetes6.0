@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginxpod
   labels:
-    name: &labels nginx
+    name: &labelss nginx
 spec:
   containers:
   - name: myapp
@@ -20,7 +20,7 @@ metadata:
   name: nginxservice
 spec:
   selector:
-    name: *labels
+    name: *labelss
   ports:
   - port: 80
     targetPort: nginxport
